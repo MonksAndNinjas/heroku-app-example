@@ -5,12 +5,23 @@
     "node": "12.8.0"
   },
   "private": true,
-  "proxy": "http://localhost:8000/api",
+  "proxy": "https://localhost:8000",
   "dependencies": {
-    "http-proxy-middleware": "^0.19.1",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
-    "react-scripts": "3.1.0"
+    "react-scripts": "3.1.0",
+    "babel-preset-env": "^1.7.0",
+    "imagesloaded": "^4.1.4",
+    "js-base64": "^2.5.1",
+    "react-google-picker": "^0.1.0",
+    "react-markdown": "^4.0.8",
+    "react-native-google-signin": "^2.0.0",
+    "react-pdf": "^4.1.0",
+    "react-redux": "^7.0.3",
+    "react-router-dom": "^5.0.1",
+    "react-social-icons": "^4.1.0",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0"
   },
   "scripts": {
     "start": "react-scripts start",

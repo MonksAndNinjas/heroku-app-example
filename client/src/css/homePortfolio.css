@@ -1,0 +1,118 @@
+/*///////////////// Home Portfolio //////////////////////*/
+#highlight-project-1, #highlight-project-2 {
+  width: 550px;
+  height: 410px;
+  opacity: 1;
+}
+
+.projectlower {
+  display: -webkit-inline-box;
+  height: 370px;
+}
+
+.projectTitle {
+  height: 40px;
+  background: black;
+  color: white;
+  box-shadow: 0 3px 6px grey;
+}
+
+.projectPic img {
+  width: 90%;
+  padding: 10px 3px 0 3px;
+}
+
+.projectPic {
+  width: 350px;
+  height: 100%;
+  border-right-style: outset;
+}
+
+.projectExpand {
+  color: cornflowerblue;
+  margin: 20% 0;
+}
+
+.projectLinks a {
+  text-decoration: none;
+  color: cornflowerblue;
+}
+
+.projectLinks {
+  margin: 10% 0;
+}
+
+.projectContent p {
+  padding: 7%;
+}
+
+.projectContent ul {
+  text-align: left;
+  list-style-image: url('../images/ninjaStar.svg');
+}
+
+.projectContent li {
+  margin: 1em 0;
+}
+
+.projectContent {
+  display: none;
+  border-left-style: inset;
+  width: 350px;
+  padding: 5% 0;
+}
+
+.projectClose {
+  display: none;
+  color: cornflowerblue;
+  margin: 20% 0 0 48%;
+  font-size: 1.5em;
+}
+
+.projectDesc span, .projectContent span {
+  font-weight: 500;
+}
+
+.projectDesc {
+  width: 250px;
+  overflow: auto;
+  padding: 10% 15px 0 15px;
+}
+
+@keyframes moveLeft {
+  from {transform: translate(0)}
+  to {transform: translate(-3000px)}
+}
+
+@keyframes moveRight {
+  from {transform: translate(0)}
+  to {transform: translate(3000px)}
+}
+
+
+@keyframes fadeOutIn {
+  0% {opacity: 1}
+  50% {opacity: 0}
+  100% {opacity: 1}
+}
+
+.fadeOutIn {
+  animation-name: fadeOutIn;
+  animation-duration: 2s;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+
+.move-left-animation {
+  animation-name: moveLeft;
+  animation-duration: 1s;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+
+.move-right-animation {
+  animation-name:  moveRight;
+  animation-duration: 1s;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
