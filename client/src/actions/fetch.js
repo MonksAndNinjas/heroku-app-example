@@ -3,7 +3,7 @@ export function fetchBlogPosts() {
   return (dispatch) => {
     dispatch({ type: 'LOADING_POSTS' });
 
-    return fetch('api/posts', {
+    return fetch('api/v1/posts', {
       accept: 'application/json',
     }).then(response => response.json())
       .then(posts => dispatch({ type: 'FETCH_BLOG_POSTS', payload: posts }))
@@ -37,7 +37,7 @@ export function fetchProjects() {
   return (dispatch) => {
     dispatch({ type: 'LOADING_PROJECTS' });
 
-    return fetch('api/projects',{
+    return fetch('api/v1/projects',{
       accept: 'application/json',
     }).then(response => response.json())
       .then(projects => dispatch({ type: 'FETCH_PROJECTS', payload: projects }))
@@ -70,7 +70,7 @@ export function fetchProfile() {
   return (dispatch) => {
     dispatch({ type: 'LOADING_PROFILE' });
 
-    return fetch('api/profiles', {
+    return fetch('api/v1/profiles', {
       accept: 'application/json',
     }).then(response => response.json())
       .then(profile => dispatch({ type: 'FETCH_PROFILE', payload: profile }))
