@@ -2,7 +2,7 @@
   "name": "heroku-app-example",
   "version": "1.0.0",
   "engines": {
-    "node": "6.3.1"
+    "node": "12.8.0"
   },
   "description": "This README would normally document whatever steps are necessary to get the application up and running.",
   "main": "index.js",
@@ -12,7 +12,7 @@
   },
   "scripts": {
     "build": "cd client && npm install && npm run build && cd ..",
-    "deploy": "cd -a client/build/. public/",
+    "deploy": "cp -a client/build/. public/",
     "postinstall": "npm run build && npm run deploy && echo 'Client built'"
   },
   "author": "",
