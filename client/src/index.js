@@ -38,8 +38,8 @@ const rootReducer = combineReducers({
 
 const store = createStore(rootReducer, applyMiddleware(thunk));
 
-//const Header = () =>
- //<header><NavBar /></header>;
+const Header = () =>
+ <header><NavBar /></header>;
 
 const Footer = () =>
   <footer><SocialMedia /></footer>;
@@ -48,7 +48,7 @@ ReactDOM.render((
   <Provider store={store}>
     <Router>
       <React.Fragment>
-     //<Header />
+        <Header />
         <Route exact path="/" component={ArtContainer} />
         <Footer />
         <App />
