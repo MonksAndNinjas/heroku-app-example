@@ -15,13 +15,12 @@ import photoReducer from './reducers/photoReducer';
 import profileReducer from './reducers/profileReducer';
 // styling
 import './css/index.css';
-// imports pages for rendering routes
+ imports pages for rendering routes
+import HomeContainer from './containers/HomeContainer';
+import BlogContainer from './containers/BlogContainer';
+import PortfolioContainer from './containers/PortfolioContainer';
 import ArtContainer from './containers/ArtContainer';
-//import HomeContainer from './containers/HomeContainer';
-//import BlogContainer from './containers/BlogContainer';
-//import PortfolioContainer from './containers/PortfolioContainer';
-//import ArtContainer from './containers/ArtContainer';
-//import ResumeContainer from './containers/ResumeContainer';
+import ResumeContainer from './containers/ResumeContainer';
 import App from './App';
 // imports nav bar for all routes
 import NavBar from './components/NavBar';
@@ -52,6 +51,9 @@ ReactDOM.render((
       <Header />
         <Route exact path="/" component={ArtContainer} />
         <Route exact path="/art" component={ArtContainer} />
+        <Route exact path="/blog" component={BlogContainer} />
+        <Route exact path="/resume" component={ResumeContainer} />
+        <Route exact path="/portfolio" component={PortfolioContainer} />
         <Footer />
         <App />
       </React.Fragment>
@@ -59,9 +61,6 @@ ReactDOM.render((
   </Provider>),
   document.getElementById('root')
 );
-        //<Route exact path="/" component={HomeContainer} />//
-        //<Route exact path="/blog" component={BlogContainer} />//
-        //<Route exact path="/resume" component={ResumeContainer} />//
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
