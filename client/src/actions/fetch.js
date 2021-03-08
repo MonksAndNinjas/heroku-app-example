@@ -7,7 +7,7 @@ export function fetchPhotos() {
       accept: 'application/json',
     }).then(response => response.json())
       .then((data) => {
-        console.log(data)
+        //console.log(data)
         let photoPromises = data.map((photos) => {
           dispatch({ type: 'LOADING_PHOTOS' })
           // makes individual calls to retrieve data for photo
