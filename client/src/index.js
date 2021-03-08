@@ -51,6 +51,7 @@ ReactDOM.render((
       <React.Fragment>
       <Header />
         <Route exact path="/" component={ArtContainer} />
+        <Route exact path="/art" component={ArtContainer} />
         <Footer />
         <App />
       </React.Fragment>
@@ -60,8 +61,6 @@ ReactDOM.render((
 );
         //<Route exact path="/" component={HomeContainer} />//
         //<Route exact path="/blog" component={BlogContainer} />//
-        //<Route exact path="/portfolio" component={PortfolioContainer} />//
-        //<Route exact path="/art" component={ArtContainer} />//
         //<Route exact path="/resume" component={ResumeContainer} />//
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
