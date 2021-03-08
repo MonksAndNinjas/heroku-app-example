@@ -15,7 +15,7 @@ import photoReducer from './reducers/photoReducer';
 import profileReducer from './reducers/profileReducer';
 // styling
 import './css/index.css';
- imports pages for rendering routes
+//imports pages for rendering routes
 import HomeContainer from './containers/HomeContainer';
 import BlogContainer from './containers/BlogContainer';
 import PortfolioContainer from './containers/PortfolioContainer';
