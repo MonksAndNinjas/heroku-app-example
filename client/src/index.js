@@ -49,11 +49,12 @@ ReactDOM.render((
     <Router>
       <React.Fragment>
       <Header />
-        <Route exact path="/" component={HomeContainer} />
-        <Route exact path="/blog" component={BlogContainer} />
-        <Route exact path="/portfolio" component={PortfolioContainer} />
-        <Route exact path="/art" component={ArtContainer} />
-        <Route exact path="/resume" component={ResumeContainer} />
+        <Route exact path="/" component={ArtContainer} />
+        //<Route exact path="/" component={HomeContainer} />//
+        //<Route exact path="/blog" component={BlogContainer} />//
+        //<Route exact path="/portfolio" component={PortfolioContainer} />//
+        //<Route exact path="/art" component={ArtContainer} />//
+        //<Route exact path="/resume" component={ResumeContainer} />//
         <Footer />
         <App />
       </React.Fragment>
