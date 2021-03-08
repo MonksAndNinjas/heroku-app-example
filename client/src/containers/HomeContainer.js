@@ -108,7 +108,7 @@ class HomeContainer extends React.Component {
           <div style={{ width: '100%' }} className="homeArtPic"><img style={{ width: '100%' }} src={jetli} alt="jetli Home"/></div>
 
           <div id="artAnchor">
-            <h1>Itś working News</h1>
+            <h1>Itś working yay News</h1>
             <div className="content">
               { display(this.props) ? (
                   <HomeArt photosArray={this.combinePhotos()} indexArray={this.generateValues(this.photosLength())} />
