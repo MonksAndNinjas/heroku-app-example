@@ -8,11 +8,11 @@ import thunk from 'redux-thunk';
 import { BrowserRouter as Router, Route }from 'react-router-dom'
 // imports for reducers
 import { combineReducers } from 'redux';
-import gitReducer from './reducers/gitReducer';
-import blogReducer from './reducers/blogReducer';
-import projectReducer from './reducers/projectReducer';
+//import gitReducer from './reducers/gitReducer';
+//import blogReducer from './reducers/blogReducer';
+//import projectReducer from './reducers/projectReducer';
 import photoReducer from './reducers/photoReducer';
-import profileReducer from './reducers/profileReducer';
+//import profileReducer from './reducers/profileReducer';
 // styling
 import './css/index.css';
 //imports pages for rendering routes
@@ -23,23 +23,23 @@ import ArtContainer from './containers/ArtContainer';
 //import ResumeContainer from './containers/ResumeContainer';
 import App from './App';
 // imports nav bar for all routes
-import NavBar from './components/NavBar';
+//import NavBar from './components/NavBar';
 import SocialMedia from './components/SocialMedia';
 
 import * as serviceWorker from './serviceWorker';
 
 const rootReducer = combineReducers({
-  posts: blogReducer,
-  gitPosts: gitReducer,
-  projects: projectReducer,
+ // posts: blogReducer,
+ // gitPosts: gitReducer,
+ // projects: projectReducer,
   photos: photoReducer,
-  profile: profileReducer
+ // profile: profileReducer
 })
 
 const store = createStore(rootReducer, applyMiddleware(thunk));
 
-const Header = () =>
- <header><NavBar /></header>;
+//const Header = () =>
+ //<header><NavBar /></header>;
 
 const Footer = () =>
   <footer><SocialMedia /></footer>;
@@ -48,7 +48,6 @@ ReactDOM.render((
   <Provider store={store}>
     <Router>
       <React.Fragment>
-        <Header />
         <Route exact path="/" component={ArtContainer} />
         <Footer />
         <App />
@@ -61,6 +60,7 @@ ReactDOM.render((
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
 
+        //   <Header /> place between React.Fragment and Route Art
         //<Route exact path="/art" component={ArtContainer} />
         //<Route exact path="/blog" component={BlogContainer} />
         //<Route exact path="/resume" component={ResumeContainer} />
