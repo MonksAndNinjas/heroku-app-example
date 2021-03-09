@@ -11,13 +11,31 @@ import { displayPhotos } from '../helpers/displayContent';
 import '../css/artContainer.css';
 // handles rendering of all art elements
 class ArtContainer extends React.Component {
+  state = {
+    showMe: 'Current
+  }
+
+  handleClick(e) {
+    this.setState({
+      showMe: e
+    })
+  }
+
   render() {
     return (
       <div className="container">
-        <h1>Art</h1>
+        <h1>Monks And Ninjas</h1>
         
-        <DisplayInformation />
-      
+         <div>
+          <button onClick={() => this.handleClick('Current')} >Current</button>
+          <button onClick={() => this.handleClick('Past')} >Past</button>
+          <button onClick={() => this.handleClick('Events')} >Events</button>
+          <button onClick={() => this.handleClick('About')} >About</button>
+          <button onClick={() => this.handleClick('Contact')} >Contact</button>
+        </div>
+
+{this.state.ShowMe === 'Past' ? (        
+
         { displayPhotos(this.props.photosData) ? (
           <div className="artsWrapper">
             <React.Fragment>
@@ -31,6 +49,7 @@ class ArtContainer extends React.Component {
           ) : (
             null
           )}
+  ) : null }
       </div>
     )
   }
