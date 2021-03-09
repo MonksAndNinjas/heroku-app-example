@@ -7,11 +7,9 @@ class DisplayInformation extends React.Component {
   
   handleClick(e) {
     console.log(e);
-    this.setState(e) => {
-      return{
+    this.setState({
         showMe: e
-      }
-    }
+      })
     console.log(this.state.showMe);
   }
   
