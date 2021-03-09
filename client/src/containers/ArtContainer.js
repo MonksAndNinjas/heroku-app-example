@@ -2,7 +2,10 @@ import React from 'react';
 // imports art component
 import Art from '../components/Art/Art';
 import ArtArchive from '../components/Art/ArtArchive';
-import DisplayInformation from '../components/Art/DisplayInformation';
+import Current from '../components/Art/Current';
+import Events from '../components/Art/Events';
+import About from '../Componenets/Art/About';
+import Contact from '../Components/Art/Contact';
 // connects to store and allows use of functions in /actions
 import { connect } from 'react-redux';
 
@@ -34,10 +37,10 @@ class ArtContainer extends React.Component {
           <button onClick={() => this.handleClick('Contact')} >Contact</button>
         </div>                               
 
-           { this.state.showMe === 'Current' ? (<h1>Current</h1>) : null }
-           { this.state.showMe === 'Events' ? (<h1>Events</h1>) : null }    
-           { this.state.showMe === 'About' ? (<h1>About</h1>) : null } 
-           { this.state.showMe === 'Contact' ? (<h1>Contact</h1>) : null } 
+           { this.state.showMe === 'Current' ? (<Current />) : null }
+           { this.state.showMe === 'Events' ? (<Events />) : null }    
+           { this.state.showMe === 'About' ? (<About />) : null } 
+           { this.state.showMe === 'Contact' ? (<Contact />) : null } 
 
         { displayPhotos(this.props.photosData) ? (
           <div className="artsWrapper">
