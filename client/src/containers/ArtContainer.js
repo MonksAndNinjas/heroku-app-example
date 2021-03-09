@@ -36,11 +36,11 @@ class ArtContainer extends React.Component {
 
         { displayPhotos(this.props.photosData) ? (
           <div className="artsWrapper">
-            <React.Fragment>
            { this.state.showMe === 'Current' ? (<h1>Current</h1>) : null }
            { this.state.showMe === 'Events' ? (<h1>Events</h1>) : null }    
            { this.state.showMe === 'About' ? (<h1>About</h1>) : null } 
            { this.state.showMe === 'Contact' ? (<h1>Contact</h1>) : null } 
+            <React.Fragment>
   {this.state.showMe === 'Past' ? (<ArtArchive category={this.props.photosData.photos.signature} type={"signature"} />) : null } 
   {this.state.showMe === 'Past' ? (<ArtArchive category={this.props.photosData.photos.paintings} type={"paintings"} />) : null } 
   {this.state.showMe === 'Past' ? (<ArtArchive category={this.props.photosData.photos.digital} type={"digital"} />) : null } 
