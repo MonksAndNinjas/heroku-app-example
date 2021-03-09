@@ -32,15 +32,19 @@ class ArtContainer extends React.Component {
           <button onClick={() => this.handleClick('Events')} >Events</button>
           <button onClick={() => this.handleClick('About')} >About</button>
           <button onClick={() => this.handleClick('Contact')} >Contact</button>
-        </div>        
+        </div>                               
 
         { displayPhotos(this.props.photosData) ? (
           <div className="artsWrapper">
             <React.Fragment>
-  {this.state.ShowMe === 'Past' ? (<ArtArchive category={this.props.photosData.photos.signature} type={"signature"} />) : null } 
-  {this.state.ShowMe === 'Past' ? (<ArtArchive category={this.props.photosData.photos.paintings} type={"paintings"} />) : null } 
-  {this.state.ShowMe === 'Past' ? (<ArtArchive category={this.props.photosData.photos.digital} type={"digital"} />) : null } 
-  {this.state.ShowMe === 'Past' ? (<ArtArchive category={this.props.photosData.photos.drawings} type={"drawings"} />) : null } 
+           { this.state.showMe === 'Current' ? (<h1>Current</h1>) : null }
+           { this.state.showMe === 'Events' ? (<h1>Events</h1>) : null }    
+           { this.state.showMe === 'About' ? (<h1>About</h1>) : null } 
+           { this.state.showMe === 'Contact' ? (<h1>Contact</h1>) : null } 
+  {this.state.showMe === 'Past' ? (<ArtArchive category={this.props.photosData.photos.signature} type={"signature"} />) : null } 
+  {this.state.showMe === 'Past' ? (<ArtArchive category={this.props.photosData.photos.paintings} type={"paintings"} />) : null } 
+  {this.state.showMe === 'Past' ? (<ArtArchive category={this.props.photosData.photos.digital} type={"digital"} />) : null } 
+  {this.state.showMe === 'Past' ? (<ArtArchive category={this.props.photosData.photos.drawings} type={"drawings"} />) : null } 
           </React.Fragment>
             <Art />
           </div>
