@@ -4,7 +4,11 @@ class DisplayInformation extends React.Component {
   render() {
     return(
       <div>
-      <h1>buttons go here</h1>
+      <button>Current</button>
+      <button>Past</button>
+      <button>Events</button>
+      <button>About</button>
+      <button>Contact</button>
       </div>
     )
   }
