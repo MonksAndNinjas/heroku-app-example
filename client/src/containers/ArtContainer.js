@@ -2,6 +2,7 @@ import React from 'react';
 // imports art component
 import Art from '../components/Art/Art';
 import ArtArchive from '../components/Art/ArtArchive';
+import DisplayInformation from '../components/Art/DisplayInformation;
 // connects to store and allows use of functions in /actions
 import { connect } from 'react-redux';
 
@@ -14,7 +15,9 @@ class ArtContainer extends React.Component {
     return (
       <div className="container">
         <h1>Art</h1>
-
+        
+        <DisplayInformation />
+      
         { displayPhotos(this.props.photosData) ? (
           <div className="artsWrapper">
             <React.Fragment>
