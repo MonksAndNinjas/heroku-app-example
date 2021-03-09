@@ -1,20 +1,15 @@
 import React from 'react';
 
 class DisplayInformation extends React.Component {
-  constructor() {
-    super();
-    
-    //Initial state is defined
-    this.state = {
-      showMe: 'none'
-    };
+  state = {
+    showMe: 'Current'
   }
   
   handleClick(e) {
     console.log(e);
     this.setState(e) => {
       return{
-        showMe: e;
+        showMe: e
       }
     }
     console.log(this.state.showMe);
