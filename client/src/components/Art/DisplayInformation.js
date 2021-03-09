@@ -1,8 +1,23 @@
 import React from 'react';
 
 class DisplayInformation extends React.Component {
+  constructor() {
+    super();
+    
+    //Initial state is defined
+    this.state = {
+      showMe: 'none'
+    };
+  }
+  
   handleClick(e) {
     console.log(e);
+    this.setState(e) => {
+      return{
+        showMe: e;
+      }
+    }
+    console.log(this.state.showMe);
   }
   
   render() {
