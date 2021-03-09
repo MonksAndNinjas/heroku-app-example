@@ -12,7 +12,7 @@ import '../css/artContainer.css';
 // handles rendering of all art elements
 class ArtContainer extends React.Component {
   state = {
-    showMe: 'Current
+    showMe: 'Current'
   }
 
   handleClick(e) {
