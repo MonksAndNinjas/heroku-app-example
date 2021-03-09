@@ -12,7 +12,7 @@ class Events extends React.Component {
         <ul>
          <li>Tierra y Fuego</li>
          <li>Chataqua Park Winterfest</li>
-        <ul>
+        </ul>
      
         <h2>Upcoming</h2>
           
