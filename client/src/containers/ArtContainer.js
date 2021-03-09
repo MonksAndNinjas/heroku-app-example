@@ -32,24 +32,23 @@ class ArtContainer extends React.Component {
           <button onClick={() => this.handleClick('Events')} >Events</button>
           <button onClick={() => this.handleClick('About')} >About</button>
           <button onClick={() => this.handleClick('Contact')} >Contact</button>
-        </div>
-
-{this.state.ShowMe === 'Past' ? (        
+        </div>        
 
         { displayPhotos(this.props.photosData) ? (
           <div className="artsWrapper">
             <React.Fragment>
+          {this.state.ShowMe === 'Past' ? (
               <ArtArchive category={this.props.photosData.photos.signature} type={"signature"} />
               <ArtArchive category={this.props.photosData.photos.paintings} type={"paintings"} />
               <ArtArchive category={this.props.photosData.photos.digital} type={"digital"} />
               <ArtArchive category={this.props.photosData.photos.drawings} type={"drawings"} />
-            </React.Fragment>
+              ) : null } 
+          </React.Fragment>
             <Art />
           </div>
           ) : (
             null
           )}
-  ) : null }
       </div>
     )
   }
