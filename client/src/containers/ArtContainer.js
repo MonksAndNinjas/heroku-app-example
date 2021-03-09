@@ -4,8 +4,8 @@ import Art from '../components/Art/Art';
 import ArtArchive from '../components/Art/ArtArchive';
 import Current from '../components/Art/Current';
 import Events from '../components/Art/Events';
-import About from '../Components/Art/About';
-import Contact from '../Components/Art/Contact';
+import About from '../components/Art/About';
+import Contact from '../components/Art/Contact';
 // connects to store and allows use of functions in /actions
 import { connect } from 'react-redux';
 
