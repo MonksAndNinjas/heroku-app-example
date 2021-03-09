@@ -24,11 +24,11 @@ class DisplayInformation extends React.Component {
           <button onClick={() => this.handleClick('Contact')} >Contact</button>
         </div>
         <div>
-           { this.state.showMe === 'Current' (<h1>'Current'</h1>) : null }
-           { this.state.showMe === 'Past' (<h1>'Past'</h1>) : null }
-           { this.state.showMe === 'Events' (<h1>'Events'</h1>) : null }    
-           { this.state.showMe === 'About' (<h1>'About'</h1>) : null } 
-           { this.state.showMe === 'Contact' (<h1>'Contact'</h1>) : null }                                    
+           { this.state.showMe === 'Current' ? (<h1>'Current'</h1>) : null }
+           { this.state.showMe === 'Past' ? (<h1>'Past'</h1>) : null }
+           { this.state.showMe === 'Events' ? (<h1>'Events'</h1>) : null }    
+           { this.state.showMe === 'About' ? (<h1>'About'</h1>) : null } 
+           { this.state.showMe === 'Contact' ? (<h1>'Contact'</h1>) : null }                                    
         </div>
       </div>
     )
