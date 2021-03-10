@@ -4,6 +4,7 @@ export default function blogReducer(
     loading: false,
     photosLoading: false,
     photos: {
+      current: [],
       drawings: [],
       digital: [],
       signature: [],
