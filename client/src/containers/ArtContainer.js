@@ -8,6 +8,8 @@ import About from '../components/Art/About';
 import Contact from '../components/Art/Contact';
 // connects to store and allows use of functions in /actions
 import { connect } from 'react-redux';
+// import logo image
+import monkslogo from '../images/MonksAndNinjasTitle.svg';
 
 import { displayPhotos } from '../helpers/displayContent';
 // styling
@@ -27,7 +29,7 @@ class ArtContainer extends React.Component {
   render() {
     return (
       <div className="container">
-        <h1>Monks And Ninjas</h1>
+        <img src={monkslogo} alt="Monks And Ninjas" />
         
          <div>
           <button onClick={() => this.handleClick('Current')} >Current</button>
