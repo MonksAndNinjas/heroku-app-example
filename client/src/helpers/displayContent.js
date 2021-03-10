@@ -2,7 +2,7 @@
 export const displayPhotos = (photosData) => {
     let photos = photosData.photos
 
-    return (photos.drawings.length > 0 && photos.digital.length > 0 && photos.signature.length > 0 && photos.paintings.length > 0)
+    return (photos.current.length > 0 && photos.drawings.length > 0 && photos.digital.length > 0 && photos.signature.length > 0 && photos.paintings.length > 0)
   }
 
   export const display = (propsData) => {
