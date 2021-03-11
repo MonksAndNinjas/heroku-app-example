@@ -114,8 +114,13 @@ div.artArchiveWrapper span {
   transition: 0.3s;
 }
 
-/* Font */
+/* Button */
+div.navigation button {
+  background: transparent;
+  border: 0 solid transparent;
+ }
 
-h1,h2,p,div.navigation button {
+/* Font */
+h1,h2,p,.navigation button {
   font-family: "Times New Roman", Times, serif;
 }
