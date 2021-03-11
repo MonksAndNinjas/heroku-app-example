@@ -21,7 +21,7 @@ class ArtContainer extends React.Component {
   }
 
   handleClick(e) {
-    console.log(document.getElementById(e))
+    console.log(document.getElementById(e).style.color)
     
     this.setState({
       showMe: e
