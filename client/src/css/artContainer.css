@@ -116,6 +116,6 @@ div.artArchiveWrapper span {
 
 /* Font */
 
-h1,h2,p {
+h1,h2,p,div.navigation button {
   font-family: "Times New Roman", Times, serif;
 }
