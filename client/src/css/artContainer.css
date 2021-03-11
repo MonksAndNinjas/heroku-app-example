@@ -149,6 +149,7 @@ div.navigation button.line:focus {
 div.navigation {
   display: flex;
   justify-content: center;
+  margin: 5% 0;
  }
 
 /*   Logo   */
