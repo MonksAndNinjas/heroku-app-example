@@ -20,11 +20,24 @@ class ArtContainer extends React.Component {
     showMe: 'Current'
   }
 
-  handleClick(e) {
-    console.log(document.getElementById(e).style.color)
+  handleClick(e1, e2, e3, e4, e5) {
+    document.getElementById(e1).style.color = 'white';
+    document.getElementById(e1).style.background = 'black';
+    
+    document.getElementById(e2).style.color = 'black';
+    document.getElementById(e2).style.background = 'white';
+    
+    document.getElementById(e3).style.color = 'black';
+    document.getElementById(e3).style.background = 'white';
+    
+    document.getElementById(e4).style.color = 'black';
+    document.getElementById(e4).style.background = 'white'; 
+    
+    document.getElementById(e5).style.color = 'black';
+    document.getElementById(e5).style.background = 'white'; 
     
     this.setState({
-      showMe: e
+      showMe: e1
     })
   }
 
@@ -34,11 +47,11 @@ class ArtContainer extends React.Component {
         <img style={{width: "100%"}} src={monkslogo} alt="Monks And Ninjas" />
         
          <div className="navigation">
-          <button id="Current" className="line" onClick={() => this.handleClick('Current')} >Current</button>
-          <button id="Past" className="line" onClick={() => this.handleClick('Past')} >Past</button>
-          <button id="Events" className="line" onClick={() => this.handleClick('Events')} >Events</button>
-          <button id="About" className="line" onClick={() => this.handleClick('About')} >About</button>
-          <button id="Contact" className="line" onClick={() => this.handleClick('Contact')} >Contact</button>
+          <button id="Current" className="line" onClick={() => this.handleClick('Current', 'Past', 'Events', 'About', 'Contact')} >Current</button>
+          <button id="Past" className="line" onClick={() => this.handleClick('Past', 'Current', 'Events', 'About', 'Contact')} >Past</button>
+          <button id="Events" className="line" onClick={() => this.handleClick('Events', 'Current', 'Past', 'About', 'Contact')} >Events</button>
+          <button id="About" className="line" onClick={() => this.handleClick('About', 'Current', 'Past', 'Events', 'Contact')} >About</button>
+          <button id="Contact" className="line" onClick={() => this.handleClick('Contact', 'Current', 'Past', 'Events', 'About')} >Contact</button>
         </div>                               
 
            { this.state.showMe === 'Current' ? (<Current />) : null }
