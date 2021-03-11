@@ -29,7 +29,7 @@ class ArtContainer extends React.Component {
   render() {
     return (
       <div className="container">
-        <img style={{width: 100%}} src={monkslogo} alt="Monks And Ninjas" />
+        <img style={{width: "100%"}} src={monkslogo} alt="Monks And Ninjas" />
         
          <div>
           <button onClick={() => this.handleClick('Current')} >Current</button>
