@@ -160,7 +160,7 @@ img#MN {
   margin: auto;
 }
 
-img#logo {
+div.navigation img#logo {
   filter: drop-shadow(2px 21px 4px gray);
 }
 
