@@ -145,6 +145,11 @@ div.navigation button.line:focus {
   background: #808080;
 }
 
+div.navigation {
+  display: flex;
+  justify-content: center;
+ }
+
 /* Font */
 h1,h2,p,.navigation button {
   font-family: "Times New Roman", Times, serif;
