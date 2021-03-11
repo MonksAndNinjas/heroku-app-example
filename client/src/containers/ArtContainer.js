@@ -10,6 +10,7 @@ import Contact from '../components/Art/Contact';
 import { connect } from 'react-redux';
 // import logo image
 import monkslogo from '../images/MonksAndNinjasTitle.svg';
+import logopic from '../images/logoMN.svg;
 
 import { displayPhotos } from '../helpers/displayContent';
 // styling
@@ -45,7 +46,8 @@ class ArtContainer extends React.Component {
     return (
       <div className="container">
         <img id="logo" style={{width: "100%"}} src={monkslogo} alt="Monks And Ninjas" />
-        
+        <img id="MN" style={{width: "100%}} src={logopic} alt="Aztec Warrior" />
+      
          <div className="navigation">
           <button id="Current" className="line" onClick={() => this.handleClick('Current', 'Past', 'Events', 'About', 'Contact')} >Current</button>
           <button id="Past" className="line" onClick={() => this.handleClick('Past', 'Current', 'Events', 'About', 'Contact')} >Past</button>
