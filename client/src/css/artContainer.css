@@ -141,6 +141,10 @@ div.navigation button.line:hover:before {
   transform: scaleX(1);
 }
 
+div.navigation button.line:focus {
+  background: #808080;
+}
+
 /* Font */
 h1,h2,p,.navigation button {
   font-family: "Times New Roman", Times, serif;
