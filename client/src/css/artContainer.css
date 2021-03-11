@@ -113,3 +113,9 @@ div.artArchiveWrapper span {
   font-weight: bold;
   transition: 0.3s;
 }
+
+/* Font */
+
+h1,h2,p {
+  font-family: "Times New Roman", Times, serif;
+}
