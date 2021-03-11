@@ -21,6 +21,8 @@ class ArtContainer extends React.Component {
   }
 
   handleClick(e) {
+    console.log(document.getElementById(e))
+    
     this.setState({
       showMe: e
     })
@@ -32,11 +34,11 @@ class ArtContainer extends React.Component {
         <img style={{width: "100%"}} src={monkslogo} alt="Monks And Ninjas" />
         
          <div className="navigation">
-          <button className="line" onClick={() => this.handleClick('Current')} >Current</button>
-          <button className="line" onClick={() => this.handleClick('Past')} >Past</button>
-          <button className="line" onClick={() => this.handleClick('Events')} >Events</button>
-          <button className="line" onClick={() => this.handleClick('About')} >About</button>
-          <button className="line" onClick={() => this.handleClick('Contact')} >Contact</button>
+          <button id="Current" className="line" onClick={() => this.handleClick('Current')} >Current</button>
+          <button id="Past" className="line" onClick={() => this.handleClick('Past')} >Past</button>
+          <button id="Events" className="line" onClick={() => this.handleClick('Events')} >Events</button>
+          <button id="About" className="line" onClick={() => this.handleClick('About')} >About</button>
+          <button id="Contact" className="line" onClick={() => this.handleClick('Contact')} >Contact</button>
         </div>                               
 
            { this.state.showMe === 'Current' ? (<Current />) : null }
