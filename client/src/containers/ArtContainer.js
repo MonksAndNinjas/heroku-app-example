@@ -44,7 +44,7 @@ class ArtContainer extends React.Component {
   render() {
     return (
       <div className="container">
-        <img style={{width: "100%"}} src={monkslogo} alt="Monks And Ninjas" />
+        <img id="logo" style={{width: "100%"}} src={monkslogo} alt="Monks And Ninjas" />
         
          <div className="navigation">
           <button id="Current" className="line" onClick={() => this.handleClick('Current', 'Past', 'Events', 'About', 'Contact')} >Current</button>
