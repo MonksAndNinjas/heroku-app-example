@@ -116,14 +116,14 @@ div.artArchiveWrapper span {
 
 /* Button */
 
-button.categories {
+div.navigation button.line {
   position: relative;
   background: transparent;
   border: 0 solid transparent;
 }
 
 
-button.categories:before {
+div.navigation button.line:before {
   content: "";
   position: absolute;
   width: 100%;
@@ -136,7 +136,7 @@ button.categories:before {
   transition: all 0.3s ease-in-out;
 }
 
-button.categories:hover:before {
+div.navigation button.line:hover:before {
   visibility: visible;
   transform: scaleX(1);
 }
