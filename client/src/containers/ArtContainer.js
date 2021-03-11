@@ -32,7 +32,7 @@ class ArtContainer extends React.Component {
         <img style={{width: "100%"}} src={monkslogo} alt="Monks And Ninjas" />
         
          <div className="navigation">
-          <button onClick={() => this.handleClick('Current')} >Current</button>
+          <button className="line" onClick={() => this.handleClick('Current')} >Current</button>
           <button onClick={() => this.handleClick('Past')} >Past</button>
           <button onClick={() => this.handleClick('Events')} >Events</button>
           <button onClick={() => this.handleClick('About')} >About</button>
