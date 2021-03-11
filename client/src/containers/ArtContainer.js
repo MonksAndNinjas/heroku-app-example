@@ -26,16 +26,16 @@ class ArtContainer extends React.Component {
     document.getElementById(e1).style.background = 'black';
     
     document.getElementById(e2).style.color = 'black';
-    document.getElementById(e2).style.background = 'white';
+    document.getElementById(e2).style.background = 'none';
     
     document.getElementById(e3).style.color = 'black';
-    document.getElementById(e3).style.background = 'white';
+    document.getElementById(e3).style.background = 'none';
     
     document.getElementById(e4).style.color = 'black';
-    document.getElementById(e4).style.background = 'white'; 
+    document.getElementById(e4).style.background = 'none'; 
     
     document.getElementById(e5).style.color = 'black';
-    document.getElementById(e5).style.background = 'white'; 
+    document.getElementById(e5).style.background = 'none'; 
     
     this.setState({
       showMe: e1
