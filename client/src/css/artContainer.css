@@ -152,7 +152,7 @@ div.navigation {
  }
 
 /*   Logo   */
-img.logo {
+img#logo {
   filter: drop-shadow(2px 21px 4px gray);
 }
 
