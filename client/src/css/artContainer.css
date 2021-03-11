@@ -152,9 +152,8 @@ div.navigation {
  }
 
 /*   Logo   */
-div.navigation img#MN {
+img#MN {
   filter: drop-shadow(2px 21px 4px gray);
-  width: 10%;
   justify-content: center;
   display: flex;
   margin: auto;
