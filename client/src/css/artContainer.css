@@ -151,6 +151,11 @@ div.navigation {
   justify-content: center;
  }
 
+/*   Logo   */
+img.logo {
+  filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(0, 0, 0, 0.5))
+}
+
 /* Font */
 h1,h2,p,.navigation button {
   font-family: "Times New Roman", Times, serif;
