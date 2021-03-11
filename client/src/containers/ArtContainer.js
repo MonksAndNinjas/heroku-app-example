@@ -33,10 +33,10 @@ class ArtContainer extends React.Component {
         
          <div className="navigation">
           <button className="line" onClick={() => this.handleClick('Current')} >Current</button>
-          <button onClick={() => this.handleClick('Past')} >Past</button>
-          <button onClick={() => this.handleClick('Events')} >Events</button>
-          <button onClick={() => this.handleClick('About')} >About</button>
-          <button onClick={() => this.handleClick('Contact')} >Contact</button>
+          <button className="line" onClick={() => this.handleClick('Past')} >Past</button>
+          <button className="line" onClick={() => this.handleClick('Events')} >Events</button>
+          <button className="line" onClick={() => this.handleClick('About')} >About</button>
+          <button className="line" onClick={() => this.handleClick('Contact')} >Contact</button>
         </div>                               
 
            { this.state.showMe === 'Current' ? (<Current />) : null }
