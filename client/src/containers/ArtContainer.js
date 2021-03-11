@@ -10,7 +10,7 @@ import Contact from '../components/Art/Contact';
 import { connect } from 'react-redux';
 // import logo image
 import monkslogo from '../images/MonksAndNinjasTitle.svg';
-import logopic from '../images/logoMN.svg;
+import logopic from '../images/logoMN.svg';
 
 import { displayPhotos } from '../helpers/displayContent';
 // styling
