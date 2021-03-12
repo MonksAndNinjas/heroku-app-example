@@ -4,10 +4,10 @@ class Contact extends React.Component {
   
   render() {
     return(
-      <div>
-        <h1>Contact</h1>
+      <div className="contactContainer" >
+        <h2>Contact</h2>
         
-        <p>Phone: 7202201556</p>
+        <p>7202201556</p>
         <a href={"mailto:" + 'Joseph@MonksAndNinjas.com'}>Joseph@MonksAndNinjas.com</a>      
       </div>
     )
