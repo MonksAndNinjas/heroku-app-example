@@ -27,4 +27,5 @@ div#socialMedia a.social-icon:first-child {
 #socialMedia {
   float: right;
   padding-right: 5%;
+  padding-bottom: 2%;
 }
