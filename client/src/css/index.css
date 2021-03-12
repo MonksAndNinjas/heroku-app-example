@@ -40,7 +40,7 @@ code {
     monospace;
 }
 
-div.eventContainer, div.aboutContainer { 
+div.eventContainer, div.aboutContainer, div.contactContainer { 
   text-align: center;
 }
 
