@@ -20,9 +20,9 @@ class About extends React.Component {
            for an escape, for something outside these omnipresent themes, I quickly buried 
            myself in anime and mangas. My style overtime coalesced to form a unique voice 
            that pays homage to my past evoking darkness, hopefulness and a sense of 
-           playfulness. In the end My work is in constant pursuit of balance, despite the 
-           world’s pull towards extremes. Now living in Boulder, CO I aim to meld my 
-           experiences with what it means to be a Boulderite. Having already lived here 
+           playfulness. In the end my work is in constant pursuit of balance, despite the 
+           world’s pull towards extremes. Now living in Boulder, CO my style has begun 
+           melding with my experiences as a Boulder resident. Having already lived here 
            before for six years, I have a wealth of locations and experiences to pull from. 
        </p>
       </div>
