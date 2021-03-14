@@ -8,6 +8,9 @@ class Contact extends React.Component {
         <h1>Contact</h1>
         
         <a href="tel:+7202201556">Tel: 7202201556</a>
+        
+        <br/>
+        
         <a href={"mailto:" + 'Joseph@MonksAndNinjas.com'}>Email: Joseph@MonksAndNinjas.com</a>      
       </div>
     )
