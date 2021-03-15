@@ -161,7 +161,7 @@ img#MN {
   margin: auto;
 }
 
-img#logo {
+img#logo, img#mail, img#phone {
   filter: drop-shadow(2px 21px 4px gray);
 }
 
