@@ -8,8 +8,6 @@ class Contact extends React.Component {
   render() {
     return(
       <div className="contactContainer" >
-        <h1>Contact</h1>
-        
         <a href="tel:+7202201556"><img id="phone" style={{width: "7%"}} src={phoneSymbol} alt="telephone" /></a>
         <a href={"mailto:" + 'Joseph@MonksAndNinjas.com'}><img id="email" style={{width: "7%"}} src={emailSymbol} alt="email" /></a>      
       </div>
