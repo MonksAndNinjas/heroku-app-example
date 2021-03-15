@@ -16,12 +16,12 @@ export const parseTitle = dataString => {
 
 export const displayArtContent = (dataArray, caption) => {
   if (dataArray[3] !== 'sizein' && dataArray[2] !== 'Medium') {
-      caption.innerHTML = `<p>Title: ${dataArray[0]}</p><p>Category: ${dataArray[1]}</p><p>Medium: ${dataArray[2]}</p><p>Dimensions: ${dataArray[3]}</p>`;
+      caption.innerHTML = `<p>Title: ${dataArray[0]}</p>`;
     } else if (dataArray[3] === 'sizein' && dataArray[2] !== 'Medium') {
-      caption.innerHTML = `<p>Title: ${dataArray[0]}</p><p>Category: ${dataArray[1]}</p><p>Medium: ${dataArray[2]}</p>`;
+      caption.innerHTML = `<p>Title: ${dataArray[0]}</p>`;
     } else if (dataArray[3] !== 'sizein' && dataArray[2] === 'Medium') {
-      caption.innerHTML = `<p>Title: ${dataArray[0]}</p><p>Category: ${dataArray[1]}</p><p>Dimensions: ${dataArray[3]}</p>`;
+      caption.innerHTML = `<p>Title: ${dataArray[0]}</p>`;
     } else if (dataArray[3] === 'sizein' && dataArray[2] === 'Medium') {
-      caption.innerHTML = `<p>Title: ${dataArray[0]}</p><p>Category: ${dataArray[1]}</p>`;
+      caption.innerHTML = `<p>Title: ${dataArray[0]}</p>`;
   }
 }
