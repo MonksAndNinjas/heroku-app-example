@@ -1,7 +1,7 @@
 import React from 'react';
 
-import phoneSymbol from '../images/phoneSymbol.svg';
-import emailSymbol from '../images/mailsymbol.svg';
+import phoneSymbol from '../../images/phoneSymbol.svg';
+import emailSymbol from '../../images/mailsymbol.svg';
 
 class Contact extends React.Component {
   
