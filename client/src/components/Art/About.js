@@ -23,7 +23,9 @@ class About extends React.Component {
            playfulness. In the end my work is in constant pursuit of balance, despite the 
            world’s pull towards extremes. Now living in Boulder, CO my style has begun 
            melding with my experiences as a Boulder resident. Having already lived here 
-           before for six years, I have a wealth of locations and experiences to pull from. 
+           before for six years, I have a wealth of locations and experiences to pull from.
+           I am also on the board of OpenStudios in charge of the Mobile Arts Program and 
+           also part of the Downtown Boulder Advisory Committee.
        </p>
       </div>
     )
