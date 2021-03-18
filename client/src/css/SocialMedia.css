@@ -20,7 +20,7 @@ div.social-container {
   transform: scale(1.5);
 }
 
-div#socialMedia a.social-icon:first-child {
+div#socialMedia a.social-icon {
   margin: 2em;
 }
 
