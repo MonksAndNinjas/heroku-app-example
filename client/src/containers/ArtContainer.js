@@ -49,9 +49,9 @@ class ArtContainer extends React.Component {
         <img id="MN" style={{width: "10%"}} src={logopic} alt="Aztec Warrior" />
       
          <div className="navigation">
-          <button id="Current" className="line" onClick={() => this.handleClick('Current', 'Past', 'Events', 'About', 'Contact')} >Current</button>
-          <button id="Past" className="line" onClick={() => this.handleClick('Past', 'Current', 'Events', 'About', 'Contact')} >Past</button>
-          <button id="Events" className="line" onClick={() => this.handleClick('Events', 'Current', 'Past', 'About', 'Contact')} >Events</button>
+          <button id="Current" className="line" onClick={() => this.handleClick('Current', 'Past', 'Events', 'About', 'Contact')} >New</button>
+          <button id="Past" className="line" onClick={() => this.handleClick('Past', 'Current', 'Events', 'About', 'Contact')} >Oldies</button>
+          <button id="Events" className="line" onClick={() => this.handleClick('Events', 'Current', 'Past', 'About', 'Contact')} >¿Que Onda?</button>
           <button id="About" className="line" onClick={() => this.handleClick('About', 'Current', 'Past', 'Events', 'Contact')} >About</button>
           <button id="Contact" className="line" onClick={() => this.handleClick('Contact', 'Current', 'Past', 'Events', 'About')} >Contact</button>
         </div>                               
